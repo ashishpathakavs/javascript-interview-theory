@@ -28,3 +28,40 @@
   <li>What is event Propagation? How to stop event from propagation?</li>
   <li>What is Prototype and prototypical inheritance?</li>
 </ol>
+
+## Answers
+
+<details>
+  <summary><b>1. Difference between var, let and const</b></summary>
+
+- **Scope**
+    
+    **va**r: Variables declared with var can have a **global** or functional scope. Global scope is for variables declared outside functions, while functional scope is for variables declared inside functions.
+    
+    **let, const:** Variables declared with let can have  **block scope.**
+    
+- **Redeclaration and reassignment**:
+    
+    var: Variables declared with var can be redeclared and reassigned.
+    
+    ```jsx
+    var name = "shiv";
+    var name = "mahesh"
+    ```
+    
+    **let**: can be reassigned to other values, but they cannot be redeclared.
+    
+    ```jsx
+    let name = "shiv";
+    name = "mahesh";
+    ```
+    
+    **const**: can not be reassigned or redeclared.
+- **Hoisting:**
+    
+    **var:** Variables declared with var are hoisted to the top of their global or local scope with default value of **undefined**, which makes them accessible before their line of declaration.
+    
+    **let**: Variables declared with let are hoisted to the top of their global, local, or block scope, but their hoisting is a little different from the one with var.
+    
+    But, let variables are hoisted without a default initialisation. So when you try to access such variables, instead of getting **undefined**, or **variable is not defined** error, you get **cannot access variable before       initialisation**.
+</details>
