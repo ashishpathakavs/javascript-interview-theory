@@ -78,3 +78,22 @@
 
 But, let variables are hoisted without a default initialisation. So when you try to access such variables, instead of getting **undefined**, or **variable is not defined** error, you get **cannot access variable before initialisation**.
 </details>
+
+<details>
+  <summary><b>3. What is closure? Expalin with example</b></summary>
+  A function along with reference to its outer environment together forms a closure. Or in other words, A Closure is a combination of a function and its lexical scope bundled together.
+  
+  When a function is returned from another function, that return function does not only have function but also have the outer variables access.
+  ```jsx
+  function greet() {
+    let name = 'John';
+    function displayName() {
+        // accessing name variable
+        return 'Hi' + ' ' + name;
+    }
+    return displayName;
+}
+const g1 = greet();
+console.log(g1());         // Hi John
+```
+</details>
