@@ -6,7 +6,6 @@
   <li>Difference between var, let and const</li>
   <li>What is hoisting?</li>
   <li>What is closure? Expalin with example</li>
-  <li>What is hoisting?</li>
   <li>What is currying?</li>
   <li>Explain anonymous function, IIFE, function declaration, function expression</li>
   <li>What is first class function? aka First Class Citizens</li>
@@ -96,4 +95,45 @@ But, let variables are hoisted without a default initialisation. So when you try
 const g1 = greet();
 console.log(g1());         // Hi John
 ```
+</details>
+
+<details>
+  <summary><b>4. What is currying?</b></summary>
+
+  Currying is a technique used in functional programming that allows you to transform a function with multiple arguments into a sequence of functions, each taking a single argument.
+
+sum(1, 2, 3) => sum(1)(2)(3)
+
+sum(1,2,3)
+```jsx
+const sum = (a, b, c) => { 
+	return a+b+c
+}
+```
+ sum(1)(2)(3)
+ ```jsx
+const sum = (a) => {
+	return (b) => {
+		return (c) => {
+		   return a+b+c
+		}
+	}
+}
+```
+
+```jsx
+// Infinie currying
+
+add(5)(6)(2)(3)(4)(5).....()
+
+function add(a){
+    return function(b) {
+        if(b){
+            return add(a+b);
+        }
+        return a;
+    }
+}
+```
+
 </details>
