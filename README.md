@@ -65,3 +65,16 @@
     
     But, let variables are hoisted without a default initialisation. So when you try to access such variables, instead of getting **undefined**, or **variable is not defined** error, you get **cannot access variable before       initialisation**.
 </details>
+
+<details>
+  <summary><b>2. What is hoisting?</b></summary>
+  Process whereby the interpreter appears to have moved the declaration of functions or variables to the top of their scope, prior to execution of the code.
+  
+  **var:** Variables declared with var are hoisted to the top of their global or local scope with default value of **undefined**, which makes them accessible before their line of declaration.
+
+**let**: Variables declared with let are hoisted to the top of their global, local, or block scope, but their hoisting is a little different from the one with var.
+
+**Function declarion** Functions declarations are also hoisted up.
+
+But, let variables are hoisted without a default initialisation. So when you try to access such variables, instead of getting **undefined**, or **variable is not defined** error, you get **cannot access variable before initialisation**.
+</details>
