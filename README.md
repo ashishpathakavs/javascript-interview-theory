@@ -137,3 +137,29 @@ function add(a){
 ```
 
 </details>
+
+<details>
+  <summary><b>5. Explain anonymous function, IIFE, function declaration, function expression</b></summary>
+
+```jsx
+//Anonymous function:
+function () {
+let x = "Hello!!";
+});
+
+
+//IIFE: Anonymous function can be immediately invoked
+(function () {
+  let x = "Hello!!";  // I will invoke myself
+})();
+
+
+//Function declaration
+function myFunction(a, b) {
+	return a * b;
+}
+
+//Function expression: Anonymous function stored in a variable.
+const x = function (a, b) {return a * b};
+```
+</details>
