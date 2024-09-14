@@ -163,3 +163,15 @@ function myFunction(a, b) {
 const x = function (a, b) {return a * b};
 ```
 </details>
+
+<details>
+  <summary><b>6. What is first class function? aka First Class Citizens</b></summary>
+A programming language is said to have First-class functions if functions in that language are treated like other variables. 
+
+So the functions can be assigned to any other variable or passed as an argument or can be returned by another function. JavaScript treat function as a first-class-citizens.
+</details>
+
+<details>
+  <summary><b>7. What is callback function?</b></summary>
+A callback function refers to a function that is passed as an argument to another function, with the intention of being called at a later point in the program's execution. The purpose of a callback function is to allow the called function to execute the passed function when a particular event or condition occurs. Another advantage is, it can be used for asynchronous task.
+</details>
