@@ -175,3 +175,26 @@ So the functions can be assigned to any other variable or passed as an argument 
   <summary><b>7. What is callback function?</b></summary>
 A callback function refers to a function that is passed as an argument to another function, with the intention of being called at a later point in the program's execution. The purpose of a callback function is to allow the called function to execute the passed function when a particular event or condition occurs. Another advantage is, it can be used for asynchronous task.
 </details>
+
+<details>
+  <summary><b>8. What is benefit of callback function over normal function?</b></summary>
+We can send different type of function inside the same function and perform different task.
+
+ ```jsx
+const calculator(a, b, callback) {
+		return callback(a, b);
+}
+
+const sum(a, b) {
+		return a+b;
+}
+
+const multiply(a, b) {
+		return a * b;
+}
+
+calculator(5, 4, sum)             // 9
+calculator(5, 4, multiply)        // 20
+```
+
+</details>
